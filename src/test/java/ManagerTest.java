@@ -39,7 +39,7 @@ class ManagerTest {
 
         manager.removeByID(1);
         manager.removeByID(3);
-        Ticket[] expected = { ticket2 };
+        Ticket[] expected = {ticket2};
         Assertions.assertArrayEquals(expected, manager.findAll());
     }
 
@@ -59,7 +59,7 @@ class ManagerTest {
         manager.add(ticket4);
 
         Ticket[] actual = manager.searchBy("DME", "SVO");
-        Ticket[] expected = { ticket4, ticket1 };
+        Ticket[] expected = {ticket4, ticket1};
         Assertions.assertArrayEquals(expected, actual);
     }
 
@@ -82,7 +82,7 @@ class ManagerTest {
         manager.add(ticket4);
         manager.add(ticket5);
 
-        Ticket[] expected = { ticket2, ticket1, ticket4, ticket5, ticket3};
+        Ticket[] expected = {ticket2, ticket1, ticket4, ticket5, ticket3};
         Assertions.assertArrayEquals(expected, manager.findAll());
     }
 
@@ -93,7 +93,7 @@ class ManagerTest {
         Manager manager = new Manager(repository);
 
         Ticket[] actual = manager.searchBy("DME", "SVO");
-        Ticket[] expected = { };
+        Ticket[] expected = {};
         Assertions.assertArrayEquals(expected, actual);
     }
 
