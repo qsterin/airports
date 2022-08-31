@@ -97,4 +97,41 @@ class ManagerTest {
         Assertions.assertArrayEquals(expected, actual);
     }
 
+    //Для 100% покрытия тестирую set и get
+    @Test
+    public void testSetId() {
+        Ticket ticket = new Ticket();
+        ticket.setId(1);
+        assertEquals(ticket.getId(), 1);
+    }
+
+    @Test
+    public void testSetPrice() {
+        Ticket ticket = new Ticket();
+        ticket.setPrice(100);
+        assertEquals(ticket.getPrice(), 100);
+    }
+
+    @Test
+    public void testSetTo() {
+        Ticket ticket = new Ticket();
+        ticket.setTo("Moscow");
+        assertEquals(ticket.getTo(), "Moscow");
+    }
+
+    @Test
+    public void testSetFrom() {
+        Ticket ticket = new Ticket();
+        ticket.setFrom("Moscow");
+        assertEquals(ticket.getFrom(), "Moscow");
+    }
+
+    @Test
+    public void testSetMiniutes() {
+        Ticket ticket = new Ticket();
+        ticket.setMinutes(100);
+        assertEquals(ticket.getMinutes(), 100);
+    }
+
+
 }

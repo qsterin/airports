@@ -5,6 +5,10 @@ public class Ticket implements Comparable<Ticket> {
     protected String from;
     protected int minutes;
 
+    public Ticket() {
+
+    }
+
 
     public String getTo() {
         return to;
